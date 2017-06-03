@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>creationWindow</class>
+ <widget class="QDialog" name="creationWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>241</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>241</width>
+    <height>398</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>241</width>
+    <height>398</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Object Creation</string>
+  </property>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>241</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Cosmic Void</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Galaxy</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SpiralGalaxy</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>0</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Object type:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Diameter (ly) (1 - 300000):</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="diameterEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>160</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Age (M years) (1 - 50000):</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ageEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>180</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>200</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Star count (1 - 350000):</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="starEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>220</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>240</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Number of arms (1 - 10):</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>280</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Alien life (0 - absent, else - present)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="armEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>260</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lifeEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>300</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="createObjB">
+   <property name="geometry">
+    <rect>
+     <x>-6</x>
+     <y>322</y>
+     <width>251</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CREATE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>createObjB</sender>
+   <signal>clicked()</signal>
+   <receiver>creationWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

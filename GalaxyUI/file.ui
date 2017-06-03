@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>readFileD</class>
+ <widget class="QDialog" name="readFileD">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>155</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>315</width>
+    <height>155</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>315</width>
+    <height>155</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>File managment</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>301</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Please enter the file name (must be in the program's directory)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>301</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="readObjB">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>301</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>READ/WRITE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>readObjB</sender>
+   <signal>clicked()</signal>
+   <receiver>readFileD</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>153</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
